@@ -57,7 +57,7 @@ class HelloApiView(APIView):
 
 class HelloViewSet(viewsets.ViewSet):
     """Test API ViewSet"""
-    serializer_class = serializers.HelloSerializer
+    serializer_class - serializers.HelloSerializer
 
     def list(self, request):
         """Return a hello message."""
