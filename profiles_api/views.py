@@ -5,12 +5,15 @@ from rest_framework.response import Response
 from rest_framework import status
 from profiles_api import serializers
 
+<<<<<<< Updated upstream
 from rest_framework import viewsets
 
 from profiles_api import models
 
 from rest_framework.authentication import TokenAuthentication
 from profiles_api import permissions
+=======
+>>>>>>> Stashed changes
 
 # Create your views here.
 
@@ -46,17 +49,27 @@ class HelloApiView(APIView):
 
     def put(self, request, pk=None):
         """Handle updating an object"""
-
         return Response({'method': 'PUT'})
 
     def patch(self, request, pk=None):
         """Handle partial update of object"""
-
         return Response({'method': 'PATCH'})
 
     def delete(self, request, pk=None):
         """Delete an object"""
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
         
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        return Response({'method': 'DELETE'})
+=======
+        return Response({'method': 'DELETE'})
+>>>>>>> parent of 2899471... VIEW SET
+=======
+>>>>>>> Stashed changes
         return Response({'method': 'DELETE'})
 
 class HelloViewSet(viewsets.ViewSet):
@@ -107,6 +120,7 @@ class HelloViewSet(viewsets.ViewSet):
         """Handle removing an object"""
 
         return Response({'http_method': 'DELETE'})
+<<<<<<< Updated upstream
 
 class UserProfileViewSet(viewsets.ModelViewSet):
     """Handle creating, creating and updating profiles"""
@@ -118,3 +132,11 @@ class UserProfileViewSet(viewsets.ModelViewSet):
     ...
     authentication_classes = (TokenAuthentication,)
     permission_classes = (permissions.UpdateOwnProfile,)
+=======
+=======
+        return Response({'method': 'DELETE'})
+>>>>>>> parent of 2899471... VIEW SET
+=======
+        return Response({'method': 'DELETE'})
+>>>>>>> parent of 2899471... VIEW SET
+>>>>>>> Stashed changes
