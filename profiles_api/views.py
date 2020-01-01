@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from profiles_api import serializers
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 from rest_framework import viewsets
 
@@ -14,6 +15,13 @@ from rest_framework.authentication import TokenAuthentication
 from profiles_api import permissions
 =======
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+from rest_framework import viewsets
+
+=======
+>>>>>>> d98eea2a42c8948a0709e607b6256b4139660220
+>>>>>>> 17327c535d5e3d4120fe74814adc3699f14f9291
 
 # Create your views here.
 
@@ -59,6 +67,7 @@ class HelloApiView(APIView):
         """Delete an object"""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         
 =======
@@ -71,6 +80,9 @@ class HelloApiView(APIView):
 =======
 >>>>>>> Stashed changes
         return Response({'method': 'DELETE'})
+=======
+
+>>>>>>> 17327c535d5e3d4120fe74814adc3699f14f9291
 
 class HelloViewSet(viewsets.ViewSet):
     """Test API ViewSet"""
@@ -119,7 +131,9 @@ class HelloViewSet(viewsets.ViewSet):
     def destroy(self, request, pk=None):
         """Handle removing an object"""
 
+<<<<<<< HEAD
         return Response({'http_method': 'DELETE'})
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
 class UserProfileViewSet(viewsets.ModelViewSet):
@@ -140,3 +154,8 @@ class UserProfileViewSet(viewsets.ModelViewSet):
         return Response({'method': 'DELETE'})
 >>>>>>> parent of 2899471... VIEW SET
 >>>>>>> Stashed changes
+=======
+=======
+        return Response({'http_method': 'DELETE'})
+>>>>>>> d98eea2a42c8948a0709e607b6256b4139660220
+>>>>>>> 17327c535d5e3d4120fe74814adc3699f14f9291
